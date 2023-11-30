@@ -1,4 +1,4 @@
-package subway.domain.edge;
+package subway.domain.subwayPath;
 
 import org.jgrapht.graph.DefaultWeightedEdge;
 import subway.domain.Station;
@@ -16,12 +16,12 @@ public class DistanceEdge extends DefaultWeightedEdge {
     }
 
     @Override
-    protected Object getSource() {
+    protected Station getSource() {
         return srcStation;
     }
 
     @Override
-    protected Object getTarget() {
+    protected Station getTarget() {
         return destStation;
     }
 
