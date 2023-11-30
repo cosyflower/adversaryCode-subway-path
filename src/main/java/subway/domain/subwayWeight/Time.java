@@ -1,14 +1,18 @@
 package subway.domain.subwayWeight;
 
 public class Time extends AbstractWeight<Time> {
-    private final int timeValue;
+    private final double timeValue;
 
-    public Time(int timeValue) {
+    public Time(double timeValue) {
         this.timeValue = timeValue;
     }
 
     @Override
     public int compareTo(Time otherTime) {
-        return timeValue - otherTime.timeValue;
+        return (int) (timeValue - otherTime.timeValue);
+    }
+
+    public double getTimeValue() {
+        return timeValue;
     }
 }

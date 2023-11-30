@@ -1,14 +1,18 @@
 package subway.domain.subwayWeight;
 
 public class Distance extends AbstractWeight<Distance> {
-    private final int distanceValue;
+    private final double distanceValue;
 
-    public Distance(int distanceValue) {
+    public Distance(double distanceValue) {
         this.distanceValue = distanceValue;
     }
 
     @Override
     public int compareTo(Distance otherDistance) {
-        return distanceValue - otherDistance.distanceValue;
+        return (int) (distanceValue - otherDistance.distanceValue);
+    }
+
+    public double getDistanceValue() {
+        return distanceValue;
     }
 }
