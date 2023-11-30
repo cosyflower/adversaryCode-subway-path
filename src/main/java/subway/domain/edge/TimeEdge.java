@@ -1,2 +1,4 @@
-package subway.domain.edge;public class TimeEdge {
+package subway.domain.edge;
+
+public class TimeEdge {
 }
